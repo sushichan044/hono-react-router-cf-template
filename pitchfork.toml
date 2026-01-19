@@ -6,5 +6,6 @@ run = "pnpm run dev"
 ready_port = 5173
 
 [daemons.localflare]
-run = "localflare attach"
+run = "localflare attach --port 8788 --no-open"
 depends = ["app"]
+ready_port = 8788

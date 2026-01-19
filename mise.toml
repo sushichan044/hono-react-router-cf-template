@@ -2,6 +2,7 @@
 "pnpm" = "latest"
 "npm:@hono/cli" = "latest"
 "npm:localflare" = "latest"
+"npm:open-cli" = "latest"
 "cargo:pitchfork-cli" = "latest" # https://pitchfork.jdx.dev/
 
 [tasks.tidy]
@@ -22,8 +23,29 @@ pnpm run auth:generate && pnpm run db:generate
 hide = true
 
 [tasks.dev]
-depends = ["setup", "dev:migrate"]
-run = "pitchfork start --all"
+depends = ["setup:*", "dev:migrate"]
+run = [
+  "pitchfork start --force --all",
+  { tasks = [
+    "ui:pitchfork",
+    "ui:localflare",
+    "log:pitchfork",
+  ] },
+]
 
 [tasks."dev:migrate"]
+depends = ["setup:auth"]
 run = "yes | pnpm run db:migrate"
+hide = true
+
+[tasks.down]
+run = "pitchfork stop app localflare"
+
+[tasks."ui:pitchfork"]
+run = "open-cli http://127.0.0.1:19876"
+
+[tasks."ui:localflare"]
+run = "open-cli https://studio.localflare.dev?port=8788"
+
+[tasks."log:pitchfork"]
+run = "pitchfork logs --tail"

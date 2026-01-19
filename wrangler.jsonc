@@ -18,7 +18,8 @@
     {
       "binding": "DB",
       "database_name": "hono-react-router-cf-template-db",
-      "migrations_dir": "./shared/db/migrations/",
+      "migrations_dir": "shared/db/migrations/",
+      "database_id": "known_after_deploy",
     },
   ],
   "kv_namespaces": [
