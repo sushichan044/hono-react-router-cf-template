@@ -1,0 +1,40 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hono-react-router-cf-template",
+  "compatibility_date": "2026-01-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "main": "./server/app.ts",
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true,
+    },
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "hono-react-router-cf-template-db",
+      "migrations_dir": "./shared/db/migrations/",
+    },
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "BETTER_AUTH_SECONDARY_KV",
+    },
+  ],
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "1002",
+      "simple": {
+        "limit": 15,
+        "period": 10,
+      },
+    },
+  ],
+  "upload_source_maps": true,
+}

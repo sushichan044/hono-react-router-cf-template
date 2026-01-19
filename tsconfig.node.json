@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    ".types/node-env.d.ts",
+    "drizzle.config.ts",
+    "eslint.config.ts",
+    "react-router.config.ts",
+    "vite.config.ts",
+    "dev/**/*",
+    "test/**/*",
+    "**/*.node.test.ts",
+    "**/*.node.test.tsx"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "types": [],
+    "lib": ["ES2022"],
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler"
+  }
+}

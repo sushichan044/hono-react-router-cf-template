@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+
+  "include": [
+    ".react-router/types/**/*",
+    ".types/app-env.d.ts",
+    "app/**/*",
+    "app/**/.server/**/*",
+    "app/**/.client/**/*",
+    "**/*.browser.test.ts",
+    "**/*.browser.test.tsx"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "types": [],
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "rootDirs": [".", "./.react-router/types"]
+  }
+}

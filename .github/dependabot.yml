@@ -1,0 +1,36 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    schedule:
+      interval: cron
+      cronjob: "0 0 * * *" # 9:00 AM JST daily
+    directories:
+      - "/"
+    cooldown:
+      default-days: 3
+    open-pull-requests-limit: 10
+    groups:
+      # If a dependency update could belong to more than one group, it is only assigned to the first group it matches with.
+      react-router:
+        patterns:
+          - "@react-router*"
+          - "react-router*"
+      prod:
+        dependency-type: "production"
+      dev:
+        dependency-type: "development"
+
+  - package-ecosystem: "github-actions"
+    schedule:
+      interval: cron
+      cronjob: "0 0 * * *" # 9:00 AM JST daily
+    cooldown:
+      default-days: 3
+    directories:
+      - "/"
+    groups:
+      non-major:
+        update-types:
+          - "minor"
+          - "patch"

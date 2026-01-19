@@ -1,0 +1,35 @@
+diff --git a/dist/types/context.d.ts b/dist/types/context.d.ts
+index 6ad1223c3f787e32f63917fceb08abc66d134056..86674fb5f29df6dc3016ded89f89aeb99d5cc740 100644
+--- a/dist/types/context.d.ts
++++ b/dist/types/context.d.ts
+@@ -132,7 +132,7 @@ interface JSONRespond {
+  *
+  * @returns {Response & TypedResponse<JSONParsed<T>, U, 'json'>} - The response after rendering the JSON object, typed with the provided object and status code types.
+  */
+-type JSONRespondReturn<T extends JSONValue | {} | InvalidJSONValue, U extends ContentfulStatusCode> = Response & TypedResponse<JSONParsed<T>, U, 'json'>;
++export type JSONRespondReturn<T extends JSONValue | {} | InvalidJSONValue, U extends ContentfulStatusCode> = Response & TypedResponse<JSONParsed<T>, U, 'json'>;
+ /**
+  * Interface representing a function that responds with HTML content.
+  *
+@@ -185,7 +185,7 @@ interface ResponseInit<T extends StatusCode = StatusCode> {
+ type ResponseOrInit<T extends StatusCode = StatusCode> = ResponseInit<T> | Response;
+ export declare const TEXT_PLAIN = "text/plain; charset=UTF-8";
+ export declare class Context<E extends Env = any, P extends string = any, I extends Input = {}> {
+-             
++
+     /**
+      * `.env` can get bindings (environment variables, secrets, KV namespaces, D1 database, R2 bucket etc.) in Cloudflare Workers.
+      *
+diff --git a/dist/types/index.d.ts b/dist/types/index.d.ts
+index 2e861bf6debb83a943a7e694d9a289b0b73b6ae6..dfda17de706d01954813eedb1282cff241dc9db5 100644
+--- a/dist/types/index.d.ts
++++ b/dist/types/index.d.ts
+@@ -21,7 +21,7 @@ export type { Env, ErrorHandler, Handler, MiddlewareHandler, Next, NotFoundRespo
+ /**
+  * Types for context, context variable map, context renderer, and execution context.
+  */
+-export type { Context, ContextVariableMap, ContextRenderer, ExecutionContext } from './context';
++export type { Context, ContextVariableMap, ContextRenderer, ExecutionContext, JSONRespondReturn } from './context';
+ /**
+  * Type for HonoRequest.
+  */

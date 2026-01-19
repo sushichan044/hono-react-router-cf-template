@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: Code Problem Check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js and pnpm
+        uses: ./.github/actions/setup-node-pnpm
+
+      - name: Build
+        run: pnpm run build
+
+      - name: typegen for react-router
+        run: pnpm run typegen:react-router
+
+      - name: Run ESLint
+        run: pnpm run lint
+
+      - name: Run oxfmt
+        run: pnpm run format:check
+
+      - name: Run typecheck
+        run: pnpm run typecheck
+
+      - name: Run node test
+        run: pnpm run test:node

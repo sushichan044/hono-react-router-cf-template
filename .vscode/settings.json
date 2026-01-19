@@ -1,0 +1,30 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixall.oxc": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "typescript.experimental.useTsgo": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

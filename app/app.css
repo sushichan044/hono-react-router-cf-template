@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* app/lib/theme/data.ts */
+@custom-variant dark {
+  :where(html[data-theme="dark"]) & {
+    @slot;
+  }
+}
+
+@custom-variant hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @slot;
+    }
+  }
+}
+
+@custom-variant hocus {
+  @media (any-hover: hover) {
+    &:hover {
+      @slot;
+    }
+  }
+
+  &:focus-visible {
+    @slot;
+  }
+}
+
+/* https://tailwindcss.com/docs/upgrade-guide#buttons-use-the-default-cursor */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+:where(:root) {
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+
+/* https://gist.github.com/tak-dcxi/0f8b924d6dd81aaeb58dc2e287f2ab3a#text-wrap */
+:where(:is(h1, h2, h3, h4, h5, h6, p, caption):lang(en)) {
+  text-wrap: pretty;
+}
+
+:where(:root) {
+  &:lang(en) {
+    font-kerning: normal;
+  }
+
+  &:lang(ja) {
+    font-kerning: none;
+  }
+}
+
+:where(h1, h2, h3, h4, h5, h6, caption) {
+  font-kerning: normal;
+}
+
+:where(:root) {
+  text-autospace: normal;
+}
+
+:where(
+  pre,
+  time,
+  input:not([type="button" i], [type="submit" i], [type="reset" i]),
+  textarea,
+  [contenteditable]
+) {
+  text-autospace: no-autospace;
+}
+
+:where(:root) {
+  text-spacing-trim: trim-start;
+}
+
+:where(pre) {
+  text-spacing-trim: space-all;
+}
+
+:where(h1, h2, h3, h4, h5, h6, caption) {
+  &:lang(ja) {
+    word-break: auto-phrase;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* https://base-ui.com/react/overview/quick-start#portals */
+.root {
+  isolation: isolate;
+}
+
+/* https://base-ui.com/react/overview/quick-start#ios-26-safari */
+body {
+  position: relative;
+}
+
+div#root {
+  min-height: 100vh;
+}
+
+footer {
+  position: sticky;
+  top: 100%;
+}

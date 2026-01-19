@@ -1,0 +1,12 @@
+{
+  "extends": "@virtual-live-lab/tsconfig/base",
+  "compilerOptions": {
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "eslint-plugin-import-access"
+      }
+    ],
+    "types": []
+  }
+}

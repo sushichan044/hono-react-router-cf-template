@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": ["pnpm-*.yaml", "**/*/worker-configuration.d.ts"],
+  "experimentalTailwindcss": {
+    "stylesheet": "./app/app.css",
+    "attributes": ["class", "className"],
+    "functions": ["clsx", "cn"],
+    "preserveDuplicates": false,
+    "preserveWhitespace": false
+  }
+}

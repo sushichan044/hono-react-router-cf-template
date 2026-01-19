@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base.json",
+
+  "include": [
+    ".types/server-env.d.ts",
+    ".react-router/types/+future.ts",
+    ".react-router/types/+server-build.d.ts",
+    "server/**/*"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "types": [],
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler"
+  }
+}

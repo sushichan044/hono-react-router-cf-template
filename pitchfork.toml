@@ -1,0 +1,10 @@
+#:schema https://pitchfork.dev/schema.json
+
+
+[daemons.app]
+run = "pnpm run dev"
+ready_port = 5173
+
+[daemons.localflare]
+run = "localflare attach"
+depends = ["app"]
