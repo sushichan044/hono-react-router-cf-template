@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["pnpm-*.yaml", "**/*/worker-configuration.d.ts"],
+  "ignorePatterns": ["pnpm-*.yaml", "**/*/worker-configuration.d.ts", "shared/db/migrations/**"],
   "experimentalTailwindcss": {
     "stylesheet": "./app/app.css",
     "attributes": ["class", "className"],

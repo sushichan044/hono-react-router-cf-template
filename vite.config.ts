@@ -11,10 +11,7 @@ import { defineConfig } from "vite";
 import babel from "vite-plugin-babel";
 import devtoolsJson from "vite-plugin-devtools-json";
 
-import {
-  configureLocalNetwork,
-  configureSourcemapPerEnvironment,
-} from "./dev/vite-plugin";
+import { configureLocalNetwork, configureSourcemapPerEnvironment } from "./dev/vite-plugin";
 
 const usage = process.env["VITEST"] === "true" ? "vitest" : "vite";
 
