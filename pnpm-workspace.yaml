@@ -8,4 +8,4 @@ onlyBuiltDependencies:
   - workerd
 
 patchedDependencies:
-  "hono@4.11.4": "patches/hono@4.11.4.patch"
+  "hono": "patches/hono@4.11.4.patch"

@@ -67,10 +67,10 @@ export const verifications = sqliteTable(
 );
 
 export const rateLimits = sqliteTable("rate_limits", {
-  count: integer("count"),
+  count: integer("count").notNull(),
   id: text("id").primaryKey(),
-  key: text("key"),
-  lastRequest: integer("last_request"),
+  key: text("key").notNull().unique(),
+  lastRequest: integer("last_request").notNull(),
 });
 
 export const usersRelations = relations(users, ({ many }) => ({
