@@ -63,7 +63,6 @@
     "lightningcss": "1.31.1",
     "oxfmt": "0.28.0",
     "tailwindcss": "4.1.18",
-    "tinyexec": "1.0.2",
     "typescript": "5.9.3",
     "unplugin-icons": "23.0.1",
     "vite": "npm:rolldown-vite@latest",

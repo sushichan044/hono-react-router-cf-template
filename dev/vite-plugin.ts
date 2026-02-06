@@ -1,7 +1,5 @@
 import type { EnvironmentOptions, Plugin } from "vite";
 
-import { x } from "tinyexec";
-
 import { localhost, localPort } from "../shared/url";
 
 export const configureLocalNetwork = (): Plugin => {
@@ -84,24 +82,4 @@ export const configureSourcemapPerEnvironment = (
   return Object.entries(options).flatMap(([targetEnv, value]) => {
     return pluginBase(targetEnv, value);
   });
-};
-
-async function migrate(): Promise<void> {
-  await x("pnpm", ["run", "db:migrate"], {
-    throwOnError: true,
-  });
-}
-
-export const migrateD1AfterWorkerdStart = (targetEnv: string): Plugin => {
-  return {
-    apply: "serve",
-    applyToEnvironment: (env) => env.name === targetEnv,
-    configureServer() {
-      void migrate().catch((err) => {
-        console.error("Failed to migrate D1 database:", err);
-      });
-    },
-    enforce: "post",
-    name: "project:migrate-d1-after-workerd-start",
-  };
 };
