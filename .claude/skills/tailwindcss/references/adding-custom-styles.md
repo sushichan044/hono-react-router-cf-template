@@ -1,1 +1,1 @@
-/Users/sushichan044/workspace/github.com/sushichan044/hono-react-router-cf-template/.agent/skills/tailwindcss/references/adding-custom-styles.md
+/Users/sushichan044/workspace/github.com/sushichan044/hono-react-router-cf-template/.agents/skills/tailwindcss/references/adding-custom-styles.md
