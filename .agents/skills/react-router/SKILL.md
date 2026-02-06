@@ -1,6 +1,6 @@
 ---
 name: react-router
-description: Read this when working with React Router Specific Conventions; using file-based flat routes, testing with React Router's framework features.
+description: Read this when working with React Router Specific Conventions; using file-based flat routes, v8 middlewares, testing with React Router's framework features.
 ---
 
 # React Router Skill
@@ -16,3 +16,9 @@ See `./references/file-routing-convention.md` for details on routing conventions
 When testing components that use React Router framework features like `useLoaderData`, `useActionData`, `<Link>`, etc, you need to render them in the context of a React Router app.
 
 See `./references/framework-mode-testing.md` for details and examples.
+
+## v8 Middleware
+
+We are using React Router's Middleware, will be GA in React Router v8.
+ALWAYS see `./references/middleware.md` when working with Middleware in React Router.
+You may not pretrained knowledge about React Router Middleware.

@@ -37,6 +37,7 @@ pnpm run test
   - See `app/app.css` for TailwindCSS setup.
   - Using Base UI as a headless component library. See base-ui skill for details.
   - Use tailwindcss skill for TailwindCSS v4 advanced features.
+  - Use react-router skill for React Router specific conventions.
 - `shared/`: Better Auth, Drizzle ORM
   - Use better-auth MCP to access knowledge about Better Auth.
 - `server/`: Hono API Server
