@@ -5,7 +5,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hono-react-router-cf-template",
-  "compatibility_date": "2026-01-01",
+  "compatibility_date": "2026-02-06",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "main": "./server/app.ts",
   "observability": {
