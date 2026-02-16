@@ -27,14 +27,14 @@
     "auth:generate": "node ./dev/scripts/generate-better-auth-schema.ts"
   },
   "dependencies": {
-    "@base-ui/react": "1.1.0",
+    "@base-ui/react": "1.2.0",
     "@libsql/client": "0.17.0",
     "@react-router/fs-routes": "7.13.0",
     "better-auth": "1.4.18",
     "drizzle-orm": "0.45.1",
-    "hono": "4.11.7",
+    "hono": "4.11.9",
     "hono-rate-limiter": "0.5.3",
-    "isbot": "5.1.34",
+    "isbot": "5.1.35",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-router": "7.13.0"
