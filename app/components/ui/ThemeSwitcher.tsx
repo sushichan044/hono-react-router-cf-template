@@ -18,17 +18,19 @@ const themes: Array<{ icon: FC<{ className?: string }>; label: string; value: Th
 
 export const ThemeSwitcher: FC = () => {
   const { setThemeConfig, themeConfig } = useTheme();
+  const themeConfigValue = themeConfig ? [themeConfig] : undefined;
 
   return (
-    <ToggleGroup
+    <ToggleGroup<ThemeConfig>
       aria-label="Theme"
       className="flex gap-0.5 rounded-lg border border-slate-200 bg-slate-100 p-0.5 dark:border-slate-700 dark:bg-slate-800"
       onValueChange={(value) => {
         if (value.length > 0) {
-          setThemeConfig(value[0] as ThemeConfig);
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          setThemeConfig(value[0]!);
         }
       }}
-      value={[themeConfig]}
+      value={themeConfigValue}
     >
       {themes.map(({ icon: Icon, label, value }) => (
         <Toggle
