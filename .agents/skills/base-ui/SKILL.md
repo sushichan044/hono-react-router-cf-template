@@ -1,13 +1,11 @@
----
-name: base-ui
-description: This skills tells you how to access docs of Base UI. Base UI is a React component library focused on accessibility, performance, and developer experience.
----
+<!-- source: https://base-ui.com/llms.txt -->
 
 # Base UI
 
 This is the documentation for the `@base-ui/react` package.
 It contains a collection of components and utilities for building user interfaces in React.
 The library is designed to be composable and styling agnostic.
+The Tailwind CSS examples are written for Tailwind CSS v4. If `package.json` uses Tailwind CSS v3, automatically convert unsupported styles to v3-compatible equivalents.
 
 ## Overview
 
@@ -15,6 +13,25 @@ The library is designed to be composable and styling agnostic.
 - [Accessibility](https://base-ui.com/react/overview/accessibility.md): Learn how to make the most of Base UI's accessibility features and guidelines.
 - [Releases](https://base-ui.com/react/overview/releases.md): Changelogs for each Base UI release.
 - [About Base UI](https://base-ui.com/react/overview/about.md): An overview of Base UI, providing information on its history, team, and goals.
+- [v1.0.0](https://base-ui.com/react/overview/releases/v1-0-0.md): v1.0.0 release notes. Dec 11, 2025.
+- [v1.0.0-alpha.4](https://base-ui.com/react/overview/releases/v1-0-0-alpha-4.md): v1.0.0-alpha.4 release notes. Dec 17, 2024.
+- [v1.0.0-alpha.5](https://base-ui.com/react/overview/releases/v1-0-0-alpha-5.md): v1.0.0-alpha.5 release notes. Jan 10, 2025.
+- [v1.0.0-alpha.6](https://base-ui.com/react/overview/releases/v1-0-0-alpha-6.md): v1.0.0-alpha.6 release notes. Feb 6, 2025.
+- [v1.0.0-alpha.7](https://base-ui.com/react/overview/releases/v1-0-0-alpha-7.md): v1.0.0-alpha.7 release notes. Mar 20, 2025.
+- [v1.0.0-alpha.8](https://base-ui.com/react/overview/releases/v1-0-0-alpha-8.md): v1.0.0-alpha.8 release notes. Apr 17, 2025.
+- [v1.0.0-beta.0](https://base-ui.com/react/overview/releases/v1-0-0-beta-0.md): v1.0.0-beta.0 release notes. May 29, 2025.
+- [v1.0.0-beta.1](https://base-ui.com/react/overview/releases/v1-0-0-beta-1.md): v1.0.0-beta.1 release notes. Jul 1, 2025.
+- [v1.0.0-beta.2](https://base-ui.com/react/overview/releases/v1-0-0-beta-2.md): v1.0.0-beta.2 release notes. Jul 30, 2025.
+- [v1.0.0-beta.3](https://base-ui.com/react/overview/releases/v1-0-0-beta-3.md): v1.0.0-beta.3 release notes. Sep 3, 2025.
+- [v1.0.0-beta.4](https://base-ui.com/react/overview/releases/v1-0-0-beta-4.md): v1.0.0-beta.4 release notes. Oct 1, 2025.
+- [v1.0.0-beta.5](https://base-ui.com/react/overview/releases/v1-0-0-beta-5.md): v1.0.0-beta.5 release notes. Nov 17, 2025.
+- [v1.0.0-beta.6](https://base-ui.com/react/overview/releases/v1-0-0-beta-6.md): v1.0.0-beta.6 release notes. Nov 17, 2025.
+- [v1.0.0-beta.7](https://base-ui.com/react/overview/releases/v1-0-0-beta-7.md): v1.0.0-beta.7 release notes. Nov 27, 2025.
+- [v1.0.0-rc.0](https://base-ui.com/react/overview/releases/v1-0-0-rc-0.md): v1.0.0-rc.0 release notes. Dec 4, 2025.
+- [v1.0.0-rc.1](https://base-ui.com/react/overview/releases/v1-0-0-rc-1.md): v1.0.0-rc.1 release notes. Dec 11, 2025.
+- [v1.0.0-rc.2](https://base-ui.com/react/overview/releases/v1-0-0-rc-2.md): v1.0.0-rc.2 release notes. Dec 11, 2025.
+- [v1.1.0](https://base-ui.com/react/overview/releases/v1-1-0.md): v1.1.0 release notes. Jan 15, 2026.
+- [v1.2.0](https://base-ui.com/react/overview/releases/v1-2-0.md): v1.2.0 release notes. Feb 12, 2026.
 
 ## Handbook
 
@@ -38,6 +55,7 @@ The library is designed to be composable and styling agnostic.
 - [Combobox](https://base-ui.com/react/components/combobox.md): A high-quality, unstyled React combobox component that renders an input combined with a list of predefined items to select.
 - [Context Menu](https://base-ui.com/react/components/context-menu.md): A high-quality, unstyled React context menu component that appears at the pointer on right click or long press.
 - [Dialog](https://base-ui.com/react/components/dialog.md): A high-quality, unstyled React dialog component that opens on top of the entire page.
+- [Drawer](https://base-ui.com/react/components/drawer.md): A high-quality, unstyled React drawer component with swipe-to-dismiss gestures.
 - [Field](https://base-ui.com/react/components/field.md): A high-quality, unstyled React field component that provides labeling and validation for form controls.
 - [Fieldset](https://base-ui.com/react/components/fieldset.md): A high-quality, unstyled React fieldset component with an easily stylable legend.
 - [Form](https://base-ui.com/react/components/form.md): A high-quality, unstyled React form component with consolidated error handling.
