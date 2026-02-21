@@ -1,4 +1,8 @@
-<!-- source: https://base-ui.com/llms.txt -->
+---
+name: base-ui
+description: This skills tells you how to access docs of Base UI. Base UI is a React component library focused on accessibility, performance, and developer experience.
+# source: https://base-ui.com/llms.txt -->
+---
 
 # Base UI
 
