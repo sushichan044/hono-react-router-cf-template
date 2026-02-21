@@ -2,6 +2,7 @@
 "pnpm" = "latest"
 "npm:@hono/cli" = "latest"
 "npm:localflare" = "latest"
+"npm:react-doctor" = "latest"
 "cargo:pitchfork-cli" = "latest" # https://pitchfork.jdx.dev/
 
 [tasks.tidy]
@@ -35,3 +36,6 @@ run = "pitchfork stop app localflare"
 
 [tasks."log:pitchfork"]
 run = "pitchfork logs --tail"
+
+[tasks."react-doctor"]
+run = "react-doctor . --diff --verbose --no-ami -y"
