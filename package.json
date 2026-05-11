@@ -72,5 +72,5 @@
     "vitest-browser-react": "2.2.0",
     "wrangler": "4.90.0"
   },
-  "packageManager": "pnpm@10.28.0"
+  "packageManager": "pnpm@11.0.9"
 }

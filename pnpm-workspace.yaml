@@ -1,11 +1,7 @@
-onlyBuiltDependencies:
-  - '@prisma/client'
-  - '@prisma/engines'
-  - better-sqlite3
-  - esbuild
-  - prisma
-  - sharp
-  - workerd
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
 
 patchedDependencies:
   "hono": "patches/hono@4.11.4.patch"
