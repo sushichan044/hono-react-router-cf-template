@@ -7,10 +7,10 @@ import {
   ScrollRestoration,
 } from "react-router";
 
-import type { Route } from "./+types/root";
+import { createBetterAuthClient } from "../shared/auth/client";
 
 import "./app.css";
-import { createBetterAuthClient } from "../shared/auth/client";
+import type { Route } from "./+types/root";
 import { AuthReactContext } from "./auth";
 import { authContext } from "./context.server";
 import { ThemeProvider, ThemeScript } from "./lib/theme";

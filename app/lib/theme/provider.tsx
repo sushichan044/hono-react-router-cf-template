@@ -1,11 +1,10 @@
 import { type FC, useLayoutEffect } from "react";
 import { useEffect, useState } from "react";
 
-import type { Theme, ThemeConfig } from "./types";
-
 import { useMatchMedia } from "../../hooks/useMatchMedia";
 import { ThemeContext } from "./context";
 import { getUserThemeConfig, setThemeDataSet, storeUserThemeConfig } from "./data";
+import type { Theme, ThemeConfig } from "./types";
 
 /**
  * @package

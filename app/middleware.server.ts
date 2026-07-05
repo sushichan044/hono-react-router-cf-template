@@ -1,5 +1,4 @@
 import type { MiddlewareFunction } from "react-router";
-
 import { redirect } from "react-router";
 
 import { authContext } from "./context.server";

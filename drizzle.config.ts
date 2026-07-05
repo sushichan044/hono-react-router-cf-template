@@ -1,5 +1,5 @@
 /**
- * drizzle-kit has responsibility to manage production migrations.
+ * Drizzle-kit has responsibility to manage production migrations.
  *
  * Local migration is performed by `wrangler d1 migrations apply` command.
  */

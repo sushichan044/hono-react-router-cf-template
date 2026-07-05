@@ -7,10 +7,7 @@
 YOU MUST check all quality checks passing before ending task.
 
 ```bash
-pnpm run format
-pnpm run lint:fix
-pnpm run typecheck
-pnpm run test
+vp run check:fix
 ```
 
 ## Directory Overview
@@ -27,13 +24,14 @@ pnpm run test
 │   │   └── server.ts # SDK for Hono Server
 │   └── db # Drizzle ORM schema and migrations. See shared/db/README.md
 │       └── migrations
-└── vite.config.ts # Vite and Vitest config
+└── vite.config.ts # Vite config
 ```
 
 ## Tech Stack
 
 - `app/`: React 19, React Router 7, TailwindCSS v4
   - Since we are using React Compiler, we don't need to write `useMemo`, `uesCallback`, `memo` by myself.
+  - Follow `react-router` skills.
   - See `app/app.css` for TailwindCSS setup.
   - Using Base UI as a headless component library. See base-ui skill for details.
   - Use tailwindcss skill for TailwindCSS v4 advanced features.
@@ -55,7 +53,7 @@ We are using Vitest for testing.
 
 Use `.node.test.{ts,tsx}` for node runtime tests like testing logic, and use `.browser.test.{ts,tsx}` for browser runtime tests like testing React components.
 
-When running node runtime tests only, use `pnpm run test:node`.
-When running browser runtime tests only, use `pnpm run test:browser`.
+When running node runtime tests only, use `vp test --project node`.
+When running browser runtime tests only, use `vp test --project browser`.
 
 Use `vitest-browser-react` skill for testing React components in Vitest Browser Mode.

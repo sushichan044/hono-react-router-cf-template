@@ -1,5 +1,4 @@
 import type { RouterContextProvider } from "react-router";
-
 import { createContext } from "react-router";
 
 import type { APIClientFactoryForSSR } from "../server/hono";
@@ -12,7 +11,9 @@ function createContextWithAccessor<T>() {
 
   return {
     get: (provider: Readonly<RouterContextProvider>) => provider.get(ctx),
-    set: (provider: RouterContextProvider, value: T) => provider.set(ctx, value),
+    set: (provider: RouterContextProvider, value: T) => {
+      provider.set(ctx, value);
+    },
   };
 }
 

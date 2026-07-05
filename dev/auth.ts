@@ -1,6 +1,5 @@
-import type { SecondaryStorage } from "better-auth";
-
 import { createClient } from "@libsql/client";
+import type { SecondaryStorage } from "better-auth";
 
 import { createBetterAuthServer } from "../shared/auth/server";
 import { createDrizzleSQLite } from "../shared/db/client";

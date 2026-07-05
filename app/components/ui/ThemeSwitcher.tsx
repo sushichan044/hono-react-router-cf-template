@@ -1,14 +1,12 @@
-import type { FC } from "react";
-
 import { Toggle } from "@base-ui/react/toggle";
 import { ToggleGroup } from "@base-ui/react/toggle-group";
+import type { FC } from "react";
 import IconMoon from "~icons/fa7-regular/moon";
 import IconSun from "~icons/fa7-regular/sun";
 import IconDisplay from "~icons/fa7-solid/display";
 
-import type { ThemeConfig } from "../../lib/theme/types";
-
 import { useTheme } from "../../lib/theme";
+import type { ThemeConfig } from "../../lib/theme/types";
 
 const themes: Array<{ icon: FC<{ className?: string }>; label: string; value: ThemeConfig }> = [
   { icon: IconSun, label: "Light", value: "light" },

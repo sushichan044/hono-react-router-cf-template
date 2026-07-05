@@ -3,5 +3,11 @@ allowBuilds:
   sharp: true
   workerd: true
 
+configDependencies:
+  "@pnpm/pacquet": 0.11.12
+
+overrides:
+  vite: "npm:@voidzero-dev/vite-plus-core@latest"
+
 patchedDependencies:
-  "hono": "patches/hono@4.11.4.patch"
+  hono@4.12.27: patches/hono@4.12.27.patch

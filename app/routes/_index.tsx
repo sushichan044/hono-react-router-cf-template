@@ -1,9 +1,8 @@
 import { useTransition } from "react";
 
-import type { Route } from "./+types/_layout._index";
-
 import { useAuth } from "../auth";
 import { useNetworkBusy } from "../hooks/useNetworkBusy";
+import type { Route } from "./+types/_index";
 
 export const meta: Route.MetaFunction = () => {
   return [

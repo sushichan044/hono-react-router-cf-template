@@ -1,6 +1,5 @@
 import type { Client } from "@libsql/client";
 import type { AnyD1Database } from "drizzle-orm/d1";
-
 import { drizzle as drizzleD1 } from "drizzle-orm/d1";
 import { drizzle as drizzleSQLite } from "drizzle-orm/libsql";
 

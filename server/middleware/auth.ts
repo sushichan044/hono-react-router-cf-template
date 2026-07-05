@@ -7,5 +7,5 @@ export const requireAuth = honoFactory.createMiddleware(async (c, next) => {
     return c.json({ error: "Unauthorized" }, 401);
   }
 
-  return await next();
+  await next();
 });

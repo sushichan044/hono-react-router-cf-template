@@ -1,5 +1,4 @@
 import type { JSONRespondReturn } from "hono";
-
 import { rateLimiter } from "hono-rate-limiter";
 
 import { IP_ADDRESS_HEADER } from "../../shared/url";

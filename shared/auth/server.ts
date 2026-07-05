@@ -1,6 +1,5 @@
 import type { SecondaryStorage } from "better-auth";
 import type { DB as DrizzleDB } from "better-auth/adapters/drizzle";
-
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { betterAuth } from "better-auth/minimal";
 import { username } from "better-auth/plugins";
