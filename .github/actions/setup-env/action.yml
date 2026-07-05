@@ -1,5 +1,5 @@
-name: Setup Node.js
-description: Setup Node.js and pnpm
+name: Setup env
+description: Setup development environment for CI workflows
 
 inputs:
   registry-url:
@@ -19,15 +19,10 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Setup pnpm
-      uses: pnpm/action-setup@91ab88e2619ed1f46221f0ba42d1492c02baf788 # v6.0.6
+    - name: Setup vite-plus
+      uses: voidzero-dev/setup-vp@13e7afb99c66525824db54e107d667216e795d37 # v1.14.0
       with:
-        run_install: false
-
-    - name: Get pnpm store path
-      id: pnpm-store
-      shell: bash
-      run: echo "store_path=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+        run-install: false
 
     - name: Setup Node.js with node version
       if: ${{ inputs.node-version != '' }}
@@ -44,8 +39,18 @@ runs:
         node-version-file: ${{ inputs.node-version-file }}
         registry-url: ${{ inputs.registry-url }}
 
+    - name: Setup pnpm
+      uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
+      with:
+        run_install: false
+
+    - name: Get pnpm store path
+      id: pnpm-store
+      shell: bash
+      run: echo "store_path=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
     - name: Restore pnpm cache
-      uses: actions/cache/restore@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: ${{ steps.pnpm-store.outputs.store_path }}
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -59,7 +64,7 @@ runs:
     - name: Save pnpm cache if main branch
       if: github.ref_name == 'main'
       id: save-pnpm-cache
-      uses: actions/cache/save@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+      uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: ${{ steps.pnpm-store.outputs.store_path }}
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
