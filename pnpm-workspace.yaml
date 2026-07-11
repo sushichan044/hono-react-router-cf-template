@@ -3,8 +3,8 @@ allowBuilds:
   sharp: true
   workerd: true
 
-# configDependencies:
-#   "@pnpm/pacquet": 0.11.12
+configDependencies:
+  "@pnpm/pacquet": 0.11.12
 
 catalogs:
   dev:
@@ -13,9 +13,6 @@ catalogs:
     "@virtual-live-lab/tsconfig": 2.1.23
     typescript: 7.0.2
     vite-plus: 0.2.4
-  vivlio:
-    "@vivliostyle/cli": "11.0.4"
-
 overrides:
   vite: "npm:@voidzero-dev/vite-plus-core@0.2.4"
 
