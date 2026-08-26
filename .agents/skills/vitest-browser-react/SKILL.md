@@ -1,3 +1,8 @@
+---
+name: vitest-browser-react
+description: Learn how to write Vitest Browser Mode test cases with React.
+---
+
 # vitest-browser-react
 
 [Docs](https://vitest.dev/api/browser/react.html) | [Package](https://npmx.dev/package/vitest-browser-react)
@@ -92,7 +97,7 @@ configure({
 
 ## The difference with `@testing-library/react`
 
-The main difference is that `vitest-browser-react` integrates with Vitest Browser Mode locators: https://github.com/vitest-dev/vitest/discussions/5828#discussioncomment-10314822
+The main difference is that `vitest-browser-react` integrates with Vitest Browser Mode locators: <https://github.com/vitest-dev/vitest/discussions/5828#discussioncomment-10314822>
 
 One small advantage is that locators are built-in, so this package is just a very lightweight wrapper around Browser Mode, but locators are also good because they provide an intuitive and ergonomic way to query and make assertions:
 
