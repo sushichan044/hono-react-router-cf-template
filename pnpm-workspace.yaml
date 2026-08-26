@@ -8,13 +8,13 @@ configDependencies:
 
 catalogs:
   dev:
-    "@types/node": 26.1.1
+    "@types/node": 26.3.0
     "@typescript/native-preview": 7.0.0-dev.20260707.2
     "@virtual-live-lab/tsconfig": 2.1.23
     typescript: 7.0.2
-    vite-plus: 0.2.4
+    vite-plus: 0.3.0
 overrides:
-  vite: "npm:@voidzero-dev/vite-plus-core@0.2.4"
+  vite: "npm:@voidzero-dev/vite-plus-core@0.3.0"
 
 patchedDependencies:
   hono@4: patches/hono@4.12.27.patch

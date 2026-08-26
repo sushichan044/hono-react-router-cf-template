@@ -1,22 +1,19 @@
----
-name: vitest-browser-react
-description: Read this when you are testing React Component with Vitest Browser Mode tests. Test file extension is expected to `.browser.test.{ts,tsx}`.
----
-
 # vitest-browser-react
+
+[Docs](https://vitest.dev/api/browser/react.html) | [Package](https://npmx.dev/package/vitest-browser-react)
 
 Render React components in Vitest Browser Mode. This library follows `testing-library` principles and exposes only [locators](https://vitest.dev/guide/browser/locators) and utilities that encourage you to write tests that closely resemble how your React components are used.
 
-`vitest-browser-react` aims to deliver a good developer experience in Vitest Browser Mode by incorporating the [locators API](https://vitest.dev/guide/browser/locators.html) and [retry-ability](https://vitest.dev/guide/browser/assertion-api.html) mechanism directly into the `render` result. This allows you to call user methods without needing to verify the element's existence or wait for external events (like API calls) to render the element.
+`vitest-browser-react` aims to deliver a good developer experience in Vitest Browser Mode by incorporating the [locators API](https://vitest.dev/api/browser/locators.html) and [retry-ability](https://vitest.dev/api/browser/assertions.html) mechanism directly into the `render` result. This allows you to call user methods without needing to verify the element's existence or wait for external events (like API calls) to render the element.
 
 Requires `vitest` 4.0.0 or higher.
 
 ```tsx
+import { render } from "vitest-browser-react";
 import { expect, test } from "vitest";
-import { page } from "vitest/browser";
 
 test("counter button increments the count", async () => {
-  const screen = await page.render(<Component count={1} />);
+  const screen = await render(<Component count={1} />);
 
   await screen.getByRole("button", { name: "Increment" }).click();
 
@@ -44,11 +41,58 @@ test("should increment counter", async () => {
 });
 ```
 
-Unlike `@testing-library/react`, `vitest-browser-react` performs cleanup of the component before the test begins, allowing you to see the rendered result in the Browser UI.
+`vitest-browser-react` also automatically injects `render` method on the `page`. Example:
+
+```ts
+// vitest.config.ts
+import { defineConfig } from "vitest/config";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    setupFiles: ["./setup-file.ts"],
+    browser: {
+      // ... your config
+    },
+  },
+});
+
+// ./setup-file.ts
+// add an import at the top of your setup file so TypeScript can pick up types
+import "vitest-browser-react";
+```
+
+> 💡 Note that `@vitejs/plugin-react` is recommended for some of React's features to work (like auto importing of `React`). You can also configure [JSX](https://vite.dev/guide/features#jsx) options manually.
+
+```tsx
+import { page } from "vitest/browser";
+
+test("counter button increments the count", async () => {
+  const screen = await page.render(<Component count={1} />);
+
+  await screen.cleanup();
+});
+```
+
+Unlike `@testing-library/react`, `vitest-browser-react` performs cleanup of the component before the test begins, allowing you to see the rendered result in the Browser UI. If you prefer to disable auto-cleanup, you can import the `render` function from `vitest-browser-react/pure`.
+
+## Configuration
+
+You can configure if the component should be rendered in Strict Mode with `configure` method from `vitest-browser-react/pure`:
+
+```ts
+import { configure } from "vitest-browser-react/pure";
+
+configure({
+  // disabled by default
+  reactStrictMode: true,
+});
+```
 
 ## The difference with `@testing-library/react`
 
-The main difference is that `vitest-browser-react` integrates with Vitest Browser Mode locators: <https://github.com/vitest-dev/vitest/discussions/5828#discussioncomment-10314822>
+The main difference is that `vitest-browser-react` integrates with Vitest Browser Mode locators: https://github.com/vitest-dev/vitest/discussions/5828#discussioncomment-10314822
 
 One small advantage is that locators are built-in, so this package is just a very lightweight wrapper around Browser Mode, but locators are also good because they provide an intuitive and ergonomic way to query and make assertions:
 

@@ -15,8 +15,9 @@ The Tailwind CSS examples are written for Tailwind CSS v4. If `package.json` use
 
 - [Quick start](https://base-ui.com/react/overview/quick-start.md): A quick guide to getting started with Base UI.
 - [Accessibility](https://base-ui.com/react/overview/accessibility.md): Learn how to make the most of Base UI's accessibility features and guidelines.
-- [Releases](https://base-ui.com/react/overview/releases.md): Changelogs for each Base UI release.
+- [Releases](https://base-ui.com/react/overview/releases.md):
 - [About Base UI](https://base-ui.com/react/overview/about.md): An overview of Base UI, providing information on its history, team, and goals.
+- [Community](https://base-ui.com/react/overview/community.md): Learn how to use Base UI with styles, where to get help, how to stay up to date, and how to contribute.
 - [v1.0.0](https://base-ui.com/react/overview/releases/v1-0-0.md): v1.0.0 release notes. Dec 11, 2025.
 - [v1.0.0-alpha.4](https://base-ui.com/react/overview/releases/v1-0-0-alpha-4.md): v1.0.0-alpha.4 release notes. Dec 17, 2024.
 - [v1.0.0-alpha.5](https://base-ui.com/react/overview/releases/v1-0-0-alpha-5.md): v1.0.0-alpha.5 release notes. Jan 10, 2025.
@@ -36,6 +37,11 @@ The Tailwind CSS examples are written for Tailwind CSS v4. If `package.json` use
 - [v1.0.0-rc.2](https://base-ui.com/react/overview/releases/v1-0-0-rc-2.md): v1.0.0-rc.2 release notes. Dec 11, 2025.
 - [v1.1.0](https://base-ui.com/react/overview/releases/v1-1-0.md): v1.1.0 release notes. Jan 15, 2026.
 - [v1.2.0](https://base-ui.com/react/overview/releases/v1-2-0.md): v1.2.0 release notes. Feb 12, 2026.
+- [v1.3.0](https://base-ui.com/react/overview/releases/v1-3-0.md): v1.3.0 release notes. Mar 12, 2026.
+- [v1.4.0](https://base-ui.com/react/overview/releases/v1-4-0.md): v1.4.0 release notes. Apr 13, 2026.
+- [v1.4.1](https://base-ui.com/react/overview/releases/v1-4-1.md): v1.4.1 release notes. Apr 20, 2026.
+- [v1.5.0](https://base-ui.com/react/overview/releases/v1-5-0.md): v1.5.0 release notes. May 19, 2026.
+- [v1.6.0](https://base-ui.com/react/overview/releases/v1-6-0.md): v1.6.0 release notes. Jun 18, 2026.
 
 ## Handbook
 
@@ -69,6 +75,7 @@ The Tailwind CSS examples are written for Tailwind CSS v4. If `package.json` use
 - [Meter](https://base-ui.com/react/components/meter.md): A high-quality, unstyled React meter component that provides a graphical display of a numeric value.
 - [Navigation Menu](https://base-ui.com/react/components/navigation-menu.md): A high-quality, unstyled React navigation menu component that displays a collection of links and menus for website navigation.
 - [Number Field](https://base-ui.com/react/components/number-field.md): A high-quality, unstyled React number field component with increment and decrement buttons, and a scrub area.
+- [OTP Field](https://base-ui.com/react/components/otp-field.md): A high-quality, unstyled React OTP field component for one-time password and verification code entry.
 - [Popover](https://base-ui.com/react/components/popover.md): A high-quality, unstyled React popover component that displays an accessible popup anchored to a button.
 - [Preview Card](https://base-ui.com/react/components/preview-card.md): A high-quality, unstyled React preview card component that appears when a link is hovered, showing a preview for sighted users.
 - [Progress](https://base-ui.com/react/components/progress.md): A high-quality, unstyled React progress bar component that displays the status of a task that takes a long time.
@@ -87,7 +94,7 @@ The Tailwind CSS examples are written for Tailwind CSS v4. If `package.json` use
 
 ## Utilities
 
-- [CSP Provider](https://base-ui.com/react/utils/csp-provider.md): A CSP provider component that applies a nonce to inline <style> and <script> tags rendered by Base UI components, and can disable inline <style> elements.
+- [CSP Provider](https://base-ui.com/react/utils/csp-provider.md): A CSP provider component that applies a nonce to inline `<style>` and `<script>` tags rendered by Base UI components, and can disable inline `<style>` elements.
 - [Direction Provider](https://base-ui.com/react/utils/direction-provider.md): A direction provider component that enables RTL behavior for Base UI components.
 - [mergeProps](https://base-ui.com/react/utils/merge-props.md): A utility to merge multiple sets of React props, handling event handlers, className, and style props intelligently.
 - [useRender](https://base-ui.com/react/utils/use-render.md): Hook for enabling a render prop in custom components.
