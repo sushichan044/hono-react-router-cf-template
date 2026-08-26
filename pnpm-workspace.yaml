@@ -9,10 +9,10 @@ configDependencies:
 catalogs:
   dev:
     "@types/node": 26.3.0
-    "@typescript/native-preview": 7.0.0-dev.20260707.2
     "@virtual-live-lab/tsconfig": 2.1.23
     typescript: 7.0.2
     vite-plus: 0.3.0
+
 overrides:
   vite: "npm:@voidzero-dev/vite-plus-core@0.3.0"
 
