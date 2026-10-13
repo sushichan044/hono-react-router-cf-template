@@ -3,7 +3,6 @@ name: base-ui
 description: This skills tells you how to access docs of Base UI. Base UI is a React component library focused on accessibility, performance, and developer experience.
 # source: https://base-ui.com/llms.txt -->
 ---
-
 # Base UI
 
 This is the documentation for the `@base-ui/react` package.
@@ -42,6 +41,9 @@ The Tailwind CSS examples are written for Tailwind CSS v4. If `package.json` use
 - [v1.4.1](https://base-ui.com/react/overview/releases/v1-4-1.md): v1.4.1 release notes. Apr 20, 2026.
 - [v1.5.0](https://base-ui.com/react/overview/releases/v1-5-0.md): v1.5.0 release notes. May 19, 2026.
 - [v1.6.0](https://base-ui.com/react/overview/releases/v1-6-0.md): v1.6.0 release notes. Jun 18, 2026.
+- [v1.7.0](https://base-ui.com/react/overview/releases/v1-7-0.md): v1.7.0 release notes. Aug 4, 2026.
+- [v1.8.0](https://base-ui.com/react/overview/releases/v1-8-0.md): v1.8.0 release notes. Sep 4, 2026.
+- [v1.9.0](https://base-ui.com/react/overview/releases/v1-9-0.md): v1.9.0 release notes. Oct 9, 2026.
 
 ## Handbook
 
@@ -77,9 +79,9 @@ The Tailwind CSS examples are written for Tailwind CSS v4. If `package.json` use
 - [Number Field](https://base-ui.com/react/components/number-field.md): A high-quality, unstyled React number field component with increment and decrement buttons, and a scrub area.
 - [OTP Field](https://base-ui.com/react/components/otp-field.md): A high-quality, unstyled React OTP field component for one-time password and verification code entry.
 - [Popover](https://base-ui.com/react/components/popover.md): A high-quality, unstyled React popover component that displays an accessible popup anchored to a button.
-- [Preview Card](https://base-ui.com/react/components/preview-card.md): A high-quality, unstyled React preview card component that appears when a link is hovered, showing a preview for sighted users.
+- [Preview Card](https://base-ui.com/react/components/preview-card.md): A high-quality, unstyled React preview card component for a link that shows a destination preview without interrupting keyboard or screen reader navigation.
 - [Progress](https://base-ui.com/react/components/progress.md): A high-quality, unstyled React progress bar component that displays the status of a task that takes a long time.
-- [Radio](https://base-ui.com/react/components/radio.md): A high-quality, unstyled React radio button component that is easy to style.
+- [Radio Group](https://base-ui.com/react/components/radio-group.md): A high-quality, unstyled React radio group component that provides shared state to a series of radio buttons.
 - [Scroll Area](https://base-ui.com/react/components/scroll-area.md): A high-quality, unstyled React scroll area that provides a native scroll container with custom scrollbars.
 - [Select](https://base-ui.com/react/components/select.md): A high-quality, unstyled React select component for choosing a predefined value in a dropdown menu.
 - [Separator](https://base-ui.com/react/components/separator.md): A high-quality, unstyled React separator component that is accessible to screen readers.
