@@ -52,6 +52,7 @@ You can create type-safe context objects using [`createContext`][createContext]:
 
 ```ts filename=app/context.ts
 import { createContext } from "react-router";
+
 import type { User } from "~/types";
 
 export const userContext = createContext<User | null>(null);
@@ -61,6 +62,7 @@ export const userContext = createContext<User | null>(null);
 
 ```tsx filename=app/routes/dashboard.tsx
 import { redirect } from "react-router";
+
 import { userContext } from "~/context";
 
 // Server-side Authentication Middleware
@@ -442,6 +444,7 @@ This allows you to leave your `action`s/`loader`s untouched during initial adopt
 
 ```tsx filename=app/middleware/auth.ts
 import { redirect } from "react-router";
+
 import { userContext } from "~/context";
 import { getSession } from "~/sessions.server";
 

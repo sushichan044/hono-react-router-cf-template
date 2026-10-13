@@ -39,6 +39,21 @@ export default defineConfig((env) => ({
       typeAware: true,
       typeCheck: false,
     },
+    plugins: [
+      // https://oxc.rs/docs/guide/usage/linter/plugins.html#supported-plugins
+      // enabled by default
+      "eslint",
+      "typescript",
+      "unicorn",
+      "oxc",
+
+      // optional
+      "import",
+      "node",
+      "promise",
+      "vitest",
+      "react",
+    ],
     rules: {
       "import/consistent-type-specifier-style": "error",
       "typescript/array-type": ["error", { default: "array-simple" }],
@@ -156,8 +171,10 @@ export default defineConfig((env) => ({
           "auth generate --config dev/auth.ts --output shared/db/auth-schema.ts -y",
           "vp check --fix shared/db/auth-schema.ts",
         ],
-        input: ["dev/auth.ts", "pnpm-lock.yaml"],
-        output: ["shared/db/auth-schema.ts"],
+        cache: {
+          input: ["dev/auth.ts", "pnpm-lock.yaml"],
+          output: ["shared/db/auth-schema.ts"],
+        },
       },
     },
   },

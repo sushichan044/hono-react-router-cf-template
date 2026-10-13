@@ -1,4 +1,5 @@
-import { type FC, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
+import type { FC } from "react";
 import { useEffect, useState } from "react";
 
 import { useMatchMedia } from "../../hooks/useMatchMedia";
