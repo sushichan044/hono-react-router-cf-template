@@ -145,12 +145,12 @@ export default defineConfig((env) => ({
       },
 
       check: {
-        command: ["vp check", "tsgo -b --noEmit"],
+        command: ["vp check", "tsc -b --noEmit"],
         dependsOn: ["generate"],
       },
 
       "check:fix": {
-        command: ["vp check --fix", "tsgo -b --noEmit"],
+        command: ["vp check --fix", "tsc -b --noEmit"],
         dependsOn: ["generate"],
       },
 
