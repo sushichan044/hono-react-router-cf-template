@@ -119,6 +119,12 @@ export default defineConfig((env) => ({
           environment: "node",
           include: ["**/*.node.test.{ts,tsx}"],
           name: "node",
+          server: {
+            deps: {
+              // Better Auth telemetry imports ESM files with directory specifiers.
+              inline: ["better-auth", /@better-auth\//, /@opentelemetry\//],
+            },
+          },
         },
       },
       {
@@ -172,7 +178,7 @@ export default defineConfig((env) => ({
           "vp check --fix shared/db/auth-schema.ts",
         ],
         cache: {
-          input: ["dev/auth.ts", "pnpm-lock.yaml"],
+          input: ["dev/auth.ts", "shared/auth/server.ts", "shared/url.ts", "pnpm-lock.yaml"],
           output: ["shared/db/auth-schema.ts"],
         },
       },

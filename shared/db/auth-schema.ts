@@ -1,4 +1,4 @@
-import { relations, sql } from "drizzle-orm";
+import { defineRelationsPart, sql } from "drizzle-orm";
 import { sqliteTable, text, integer, index } from "drizzle-orm/sqlite-core";
 
 export const users = sqliteTable("users", {
@@ -17,6 +17,27 @@ export const users = sqliteTable("users", {
   username: text("username").unique(),
   displayUsername: text("display_username"),
 });
+
+export const sessions = sqliteTable(
+  "sessions",
+  {
+    id: text("id").primaryKey(),
+    expiresAt: integer("expires_at", { mode: "timestamp_ms" }).notNull(),
+    token: text("token").notNull().unique(),
+    createdAt: integer("created_at", { mode: "timestamp_ms" })
+      .default(sql`(cast(unixepoch('subsecond') * 1000 as integer))`)
+      .notNull(),
+    updatedAt: integer("updated_at", { mode: "timestamp_ms" })
+      .$onUpdate(() => /* @__PURE__ */ new Date())
+      .notNull(),
+    ipAddress: text("ip_address"),
+    userAgent: text("user_agent"),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+  },
+  (table) => [index("sessions_userId_idx").on(table.userId)],
+);
 
 export const accounts = sqliteTable(
   "accounts",
@@ -48,6 +69,24 @@ export const accounts = sqliteTable(
   (table) => [index("accounts_userId_idx").on(table.userId)],
 );
 
+export const verifications = sqliteTable(
+  "verifications",
+  {
+    id: text("id").primaryKey(),
+    identifier: text("identifier").notNull(),
+    value: text("value").notNull(),
+    expiresAt: integer("expires_at", { mode: "timestamp_ms" }).notNull(),
+    createdAt: integer("created_at", { mode: "timestamp_ms" })
+      .default(sql`(cast(unixepoch('subsecond') * 1000 as integer))`)
+      .notNull(),
+    updatedAt: integer("updated_at", { mode: "timestamp_ms" })
+      .default(sql`(cast(unixepoch('subsecond') * 1000 as integer))`)
+      .$onUpdate(() => /* @__PURE__ */ new Date())
+      .notNull(),
+  },
+  (table) => [index("verifications_identifier_idx").on(table.identifier)],
+);
+
 export const rateLimits = sqliteTable("rate_limits", {
   id: text("id").primaryKey(),
   key: text("key").notNull().unique(),
@@ -55,13 +94,30 @@ export const rateLimits = sqliteTable("rate_limits", {
   lastRequest: integer("last_request").notNull(),
 });
 
-export const usersRelations = relations(users, ({ many }) => ({
-  accounts: many(accounts),
-}));
-
-export const accountsRelations = relations(accounts, ({ one }) => ({
-  users: one(users, {
-    fields: [accounts.userId],
-    references: [users.id],
+export const authRelations = defineRelationsPart(
+  { users, sessions, accounts, verifications, rateLimits },
+  (r) => ({
+    users: {
+      sessions: r.many.sessions({
+        from: r.users.id,
+        to: r.sessions.userId,
+      }),
+      accounts: r.many.accounts({
+        from: r.users.id,
+        to: r.accounts.userId,
+      }),
+    },
+    sessions: {
+      user: r.one.users({
+        from: r.sessions.userId,
+        to: r.users.id,
+      }),
+    },
+    accounts: {
+      user: r.one.users({
+        from: r.accounts.userId,
+        to: r.users.id,
+      }),
+    },
   }),
-}));
+);

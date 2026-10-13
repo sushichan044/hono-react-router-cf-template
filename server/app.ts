@@ -15,7 +15,6 @@ import { createDrizzleD1 } from "../shared/db/client";
 import { localOrigin, prodOrigin } from "../shared/url";
 import { createAPIClient, honoFactory } from "./hono";
 import { apiRoutes } from "./routes/api";
-import { createBetterAuthSecondaryKVStorage } from "./storage";
 
 const app = honoFactory.createApp();
 
@@ -61,7 +60,6 @@ app.use(
     const auth = createBetterAuthServer(createDrizzleD1(c.env.DB), {
       baseURL,
       credentials: {},
-      secondaryStorage: createBetterAuthSecondaryKVStorage(c.env.BETTER_AUTH_SECONDARY_KV),
     });
 
     const session = await auth.api.getSession({ headers: c.req.raw.headers });

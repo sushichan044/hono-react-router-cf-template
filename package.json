@@ -5,14 +5,15 @@
   "scripts": {
     "prepare": "node -e \"process.env.CI || process.exit(1)\" || vp run generate:types",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "wrangler d1 migrations apply DB",
-    "db:migrate:prod": "NODE_ENV=production drizzle-kit migrate"
+    "db:migrate": "wrangler d1 migrations apply DB --local",
+    "db:migrate:prod": "drizzle-kit migrate"
   },
   "dependencies": {
     "@base-ui/react": "1.9.0",
-    "@libsql/client": "0.17.4",
-    "better-auth": "1.7.2",
-    "drizzle-orm": "0.45.2",
+    "@better-auth/drizzle-adapter": "1.7.7",
+    "@libsql/client": "0.18.0",
+    "better-auth": "1.7.7",
+    "drizzle-orm": "1.0.0-rc.4",
     "hono": "4.13.5",
     "hono-rate-limiter": "0.5.4",
     "isbot": "5.2.2",
@@ -34,9 +35,9 @@
     "@virtual-live-lab/tsconfig": "catalog:dev",
     "@vitejs/plugin-react": "^6.1.2",
     "@vitest/browser-playwright": "catalog:dev",
-    "auth": "1.7.2",
+    "auth": "1.7.7",
     "babel-plugin-react-compiler": "^1.0.0",
-    "drizzle-kit": "0.31.10",
+    "drizzle-kit": "1.0.0-rc.4",
     "playwright": "^1.64.0",
     "tailwindcss": "4.3.3",
     "typescript": "catalog:dev",

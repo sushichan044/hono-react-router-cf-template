@@ -18,13 +18,9 @@
     {
       "binding": "DB",
       "database_name": "hono-react-router-cf-template-db",
-      "migrations_dir": "shared/db/migrations/",
+      "migrations_dir": "shared/db/migrations",
+      "migrations_pattern": "shared/db/migrations/**/migration.sql",
       "database_id": "known_after_deploy",
-    },
-  ],
-  "kv_namespaces": [
-    {
-      "binding": "BETTER_AUTH_SECONDARY_KV",
     },
   ],
   "ratelimits": [

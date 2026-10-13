@@ -1,6 +1,5 @@
-import type { SecondaryStorage } from "better-auth";
-import type { DB as DrizzleDB } from "better-auth/adapters/drizzle";
-import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import type { DB as DrizzleDB } from "@better-auth/drizzle-adapter/relations-v2";
+import { drizzleAdapter } from "@better-auth/drizzle-adapter/relations-v2";
 import { betterAuth } from "better-auth/minimal";
 import { username } from "better-auth/plugins";
 import { lastLoginMethod } from "better-auth/plugins";
@@ -20,7 +19,6 @@ const initDrizzleAdapter = (db: DrizzleDB) => {
 type BetterAuthParams = {
   baseURL: string;
   credentials?: unknown; // extend this when using social login providers
-  secondaryStorage: SecondaryStorage;
 };
 
 const serverPlugins = [username(), lastLoginMethod()];
@@ -48,7 +46,6 @@ export const createBetterAuthServer = (db: DrizzleDB, params: BetterAuthParams) 
       storage: "database",
       window: 60,
     },
-    secondaryStorage: params.secondaryStorage,
     trustedOrigins: [localOrigin, prodOrigin, prodOriginAllSubdomains],
   });
 };

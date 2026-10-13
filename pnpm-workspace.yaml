@@ -3,9 +3,6 @@ allowBuilds:
   sharp: true
   workerd: true
 
-configDependencies:
-  "@pnpm/pacquet": 0.11.12
-
 catalogs:
   dev:
     "@types/node": 26.6.5
