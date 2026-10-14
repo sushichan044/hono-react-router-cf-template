@@ -37,7 +37,7 @@
     "@vitest/browser-playwright": "catalog:dev",
     "auth": "1.7.7",
     "babel-plugin-react-compiler": "^1.0.0",
-    "drizzle-kit": "1.0.0-rc.4",
+    "drizzle-kit": "1.0.0-rc.5-5935859",
     "playwright": "^1.64.0",
     "tailwindcss": "4.3.3",
     "typescript": "catalog:dev",
