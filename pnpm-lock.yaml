@@ -179,8 +179,8 @@ catalogs:
       specifier: 2.1.23
       version: 2.1.23
     '@vitest/browser-playwright':
-      specifier: 5.0.3
-      version: 5.0.3
+      specifier: 5.0.4
+      version: 5.0.4
     typescript:
       specifier: 7.0.2
       version: 7.0.2
@@ -191,12 +191,12 @@ catalogs:
       specifier: 1.1.0
       version: 1.1.0
     vitest:
-      specifier: 5.0.3
-      version: 5.0.3
+      specifier: 5.0.4
+      version: 5.0.4
 
 overrides:
   vite@*: npm:@voidzero-dev/vite-plus-core@1.1.0
-  vitest@*: 5.0.3
+  vitest@*: 5.0.4
 
 patchedDependencies:
   hono@4: 24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822
@@ -210,22 +210,22 @@ importers:
         version: 1.9.0(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@better-auth/drizzle-adapter':
         specifier: 1.7.7
-        version: 1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))
+        version: 1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))
       '@libsql/client':
         specifier: 0.18.0
         version: 0.18.0
       better-auth:
         specifier: 1.7.7
-        version: 1.7.7(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.3)
+        version: 1.7.7(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.4)
       drizzle-orm:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6)
+        specifier: 1.0.0-rc.5-5935859
+        version: 1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6)
       hono:
-        specifier: 4.13.5
-        version: 4.13.5(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)
+        specifier: 4.13.13
+        version: 4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)
       hono-rate-limiter:
         specifier: 0.5.4
-        version: 0.5.4(hono@4.13.5(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822))
+        version: 0.5.4(hono@4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822))
       isbot:
         specifier: 5.2.2
         version: 5.2.2
@@ -277,10 +277,10 @@ importers:
         version: 6.1.2(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7(supports-color@10.2.2))(@babel/runtime@7.29.7)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(rolldown@1.1.4))(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(babel-plugin-react-compiler@1.0.0)
       '@vitest/browser-playwright':
         specifier: catalog:dev
-        version: 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.3)
+        version: 5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.4)
       auth:
         specifier: 1.7.7
-        version: 1.7.7(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(chokidar@5.0.0)(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(giget@3.3.0)(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@10.2.2)(vitest@5.0.3)
+        version: 1.7.7(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(chokidar@5.0.0)(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(giget@3.3.0)(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@10.2.2)(vitest@5.0.4)
       babel-plugin-react-compiler:
         specifier: ^1.0.0
         version: 1.0.0
@@ -307,13 +307,13 @@ importers:
         version: 1.1.1(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
       vite-plus:
         specifier: catalog:dev
-        version: 1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)
+        version: 1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)
       vitest:
         specifier: catalog:dev
-        version: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+        version: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
       vitest-browser-react:
         specifier: 2.3.0
-        version: 2.3.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.3)
+        version: 2.3.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.4)
       wrangler:
         specifier: 4.149.0
         version: 4.149.0(@types/node@26.6.5)
@@ -2100,21 +2100,26 @@ packages:
       oxc-transform-react:
         optional: true
 
-  '@vitest/browser-playwright@5.0.3':
-    resolution: {integrity: sha512-rYBHwIFL/ZtI6dl0rbrAatScXCrvX+TL2BX2AGOigkC1Y6u3rIWw8KMQJJMS4drSa1ksMCmZU2wpgwdE7kqu3g==}
+  '@vitest/browser-playwright@5.0.4':
+    resolution: {integrity: sha512-RYbUmphqONHDcpjMHLNQRy47XbQHHnZokBgtjM8MSPGSiqwBcqwYufdSYEceOwk6zZjKUr3ps5HgjbiXo7sOTg==}
     peerDependencies:
       playwright: '*'
-      vitest: 5.0.3
+      vitest: 5.0.4
 
   '@vitest/browser-preview@5.0.3':
     resolution: {integrity: sha512-jfnEBv5yDRPR1MeiTlTW5bcZoPsiI7MBhpZR8IJiSxVhdK6Pa4gPk3tLHTRxVHy24kkWxY2TnUbnszU3J1bQJw==}
     peerDependencies:
-      vitest: 5.0.3
+      vitest: 5.0.4
 
   '@vitest/browser@5.0.3':
     resolution: {integrity: sha512-7KHIkVA/gTRxQV9qPa9qLK+g5INZG6iRrlwXSFG5EKsOomW3UzzW7wsdt1Yp5PufzQ43lniuONlb4lUVCC2qSg==}
     peerDependencies:
-      vitest: 5.0.3
+      vitest: 5.0.4
+
+  '@vitest/browser@5.0.4':
+    resolution: {integrity: sha512-pRRkI2am/lmhGiaeHkVVLQb7SZyCOe5ytjVNQ0zLNZjA1xb+7aNTRqaaPeMJzWM958/5IrxJ50yTUpKSsigHMw==}
+    peerDependencies:
+      vitest: 5.0.4
 
   '@vitest/mocker@5.0.3':
     resolution: {integrity: sha512-T8sWAIbkSyAjkwTcaEc3Iu0o9A27X1/kdXrizhZkGuSKScRQtRzclfAMpOTcGdXCsqxeWlpGy3XjqaW8CpLORg==}
@@ -2127,8 +2132,22 @@ packages:
       vite:
         optional: true
 
+  '@vitest/mocker@5.0.4':
+    resolution: {integrity: sha512-tqAlrYWce4iUxhr3ncNohejtCTOcHeE8XWrSNZY3OhPoDn01yeGv+gnaBy64ATp7o6pb03eIbBAjzmibpc9vIQ==}
+    peerDependencies:
+      msw: ^2.4.9 || ^3.0.0
+      vite: ^6.0.0 || ^7.0.0 || ^8.0.0
+    peerDependenciesMeta:
+      msw:
+        optional: true
+      vite:
+        optional: true
+
   '@vitest/pretty-format@5.0.3':
     resolution: {integrity: sha512-3hr5eV5z2ff0l2Q1vaKQbB4j3M3tElw8stDokEOTqXJB3Es5VrT8gBRIMY59gGuFp8Y61sWlWFK1aNUH5dHDYw==}
+
+  '@vitest/pretty-format@5.0.4':
+    resolution: {integrity: sha512-kh/bp0oLr6w18kt4MFn5/zS+Hpc5k3bsf6S2m2Qksj7sKHrnc7Tu90UVYyiXnRvkYruN6kSCHQ3RR+SBE6FinA==}
 
   '@vitest/snapshot@5.0.3':
     resolution: {integrity: sha512-SK4YTg9jL+jwakHIZxfciuvyOQsbY15AueR3USGtsXzmy+3FbJgqjAbC+ac20mRLwfEDtO5sfTqK6bUCDTRVPA==}
@@ -2136,13 +2155,24 @@ packages:
   '@vitest/spy@5.0.3':
     resolution: {integrity: sha512-XhFysQTB8AZ+P4gMi+Lpo99vg2AZi0qKpaB9yXQl37+CaMEAPO3iH/wGVnSyL5MPERiLezpqTVtrR6UZH5GCXg==}
 
+  '@vitest/spy@5.0.4':
+    resolution: {integrity: sha512-MZKk/gSkm2q+ICobMxCpH1mA+cCAWm8WV7UhxlqGjq/sJ3AGc1BqFOs5CRVXxH78wQtme9q/NAAgBquj4AcyMw==}
+
   '@vitest/ui@5.0.3':
     resolution: {integrity: sha512-9dfvqDBvSbHM6y9YVXxAypkl2z7mrWozK/JFo237qI0cj/3M/kzDKiVZqzi3TE54Ler7Jditud7OMBZCyUvRHA==}
     peerDependencies:
-      vitest: 5.0.3
+      vitest: 5.0.4
+
+  '@vitest/ui@5.0.4':
+    resolution: {integrity: sha512-L40ToOGwFgeZ+JVPMKHb7T0b671mqcmCpMUh9P68xq9YZ+TXM72rkDf9ljuv02e5Y1zj8ww0CnWIUnqs3FEWKQ==}
+    peerDependencies:
+      vitest: 5.0.4
 
   '@vitest/utils@5.0.3':
     resolution: {integrity: sha512-77fDTZv8eu1CzlIfgPU2yrl5MXSUaUAOvgdZEeVm3X3WIxUubIX2SforqS6176lT32HCF6uBVMYVqfHxw7o6eg==}
+
+  '@vitest/utils@5.0.4':
+    resolution: {integrity: sha512-hgpnyMuMqCz2PARmk3v62FxUr8jHIkY13ygvUeh8s+dmQxfnvkB/sgtoZFzG4lMitnEdnrg/lCvDbtVzuAsGWQ==}
 
   '@voidzero-dev/vite-plus-core@1.1.0':
     resolution: {integrity: sha512-Ai6HQP1zG0H3ZrmStEaMVKtDzW0xU3VgMzm3LFaXDQMEp8nAqvp0VGoU8HmpB9xv9vDSl+UxiSNOpuY9T714OQ==}
@@ -2482,7 +2512,7 @@ packages:
       react-dom: ^18.0.0 || ^19.0.0
       solid-js: ^1.0.0
       svelte: ^4.0.0 || ^5.0.0
-      vitest: 5.0.3
+      vitest: 5.0.4
       vue: ^3.0.0
     peerDependenciesMeta:
       '@lynx-js/react':
@@ -2573,8 +2603,8 @@ packages:
   caniuse-lite@1.0.30001800:
     resolution: {integrity: sha512-MMHtuAz9Ys840zAY5F4k6fV5GaivZ9sPk+nz0mY+GYVzRBnYkN0mpqkSR92oWRQ19yQWo4HvBV/FnC16AJX8MA==}
 
-  chai@6.2.2:
-    resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
+  chai@6.3.0:
+    resolution: {integrity: sha512-XWAtwJ6OHO+tj0EKCs0Y2UamnyOxseZWltU4x2U2wh8g4AigdjwvtUjvLP2tqkA/avxHEtzxNaqGq/YGNwckKg==}
     engines: {node: '>=18'}
 
   chalk@5.6.2:
@@ -2682,35 +2712,36 @@ packages:
     resolution: {integrity: sha512-KZCpjRyu+oYHLj/UJogfFlOkWhHVkaEI2EOT1U3NDVXUzLoTyPjqwFxwOrlQxsY6jzRyxcz4EacqboGfhEeYrA==}
     hasBin: true
 
-  drizzle-orm@1.0.0-rc.4:
-    resolution: {integrity: sha512-BT+pf+qoiYHqltoA88Jmf6ilGMXPlpfE0hEJKc2adRtMCAl25Swk/t5gXcWxZNAwdtf3F5gCd2FpeOyP/pT0Hw==}
+  drizzle-orm@1.0.0-rc.5-5935859:
+    resolution: {integrity: sha512-PkVjyxhamD7IOVfpDMn3BmV9afyvj3eeLvIPind3NmPv+cfv6/jh6GN0fHP0zzgrprGx/jGE4mkE0ttRFlzHwA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
-      '@effect/sql-d1': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-libsql': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-mysql2': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-pg': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-pglite': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-sqlite-bun': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-sqlite-do': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-sqlite-node': '>=4.0.0-beta.83 || >=4.0.0'
-      '@effect/sql-sqlite-wasm': '>=4.0.0-beta.83 || >=4.0.0'
+      '@drizzle-team/minipg': '>=0.3.2'
+      '@effect/sql-d1': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-libsql': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-mysql2': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-pg': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-pglite': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-sqlite-bun': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-sqlite-do': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-sqlite-node': '>=4.0.0-beta.105 || >=4.0.0'
+      '@effect/sql-sqlite-wasm': '>=4.0.0-beta.105 || >=4.0.0'
       '@electric-sql/pglite': '>=0.2.0'
       '@libsql/client': '>=0.10.0'
       '@libsql/client-wasm': '>=0.10.0'
       '@neondatabase/serverless': '>=0.10.0'
-      '@op-engineering/op-sqlite': '>=2'
+      '@op-engineering/op-sqlite': '>=17'
       '@opentelemetry/api': ^1.4.1
       '@planetscale/database': '>=1.13'
       '@sinclair/typebox': '>=0.34.8'
       '@sqlitecloud/drivers': '>=1.0.653'
       '@tidbcloud/serverless': '*'
-      '@tursodatabase/database': '>=0.6.0-pre.28 || >=0.6.0'
-      '@tursodatabase/database-common': '>=0.6.0-pre.28 || >=0.6.0'
-      '@tursodatabase/database-wasm': '>=0.6.0-pre.28 || >=0.6.0'
-      '@tursodatabase/serverless': '>=1.1.3'
-      '@tursodatabase/sync': '>=0.6.0-pre.28 || >=0.6.0'
+      '@tursodatabase/database': '>=0.7.1'
+      '@tursodatabase/database-common': '>=0.7.1'
+      '@tursodatabase/database-wasm': '>=0.7.1'
+      '@tursodatabase/serverless': '>=1.4.0'
+      '@tursodatabase/sync': '>=0.7.1'
       '@types/better-sqlite3': '*'
       '@types/mssql': ^9.1.4
       '@types/pg': '*'
@@ -2721,7 +2752,7 @@ packages:
       arktype: '>=2.0.0'
       better-sqlite3: '>=9.3.0'
       bun-types: '*'
-      effect: '>=4.0.0-beta.83 || >=4.0.0'
+      effect: '>=4.0.0-beta.105 || >=4.0.0'
       expo-sqlite: '>=14.0.0'
       mssql: ^11.0.1
       mysql2: '>=2'
@@ -2729,13 +2760,15 @@ packages:
       postgres: '>=3'
       sql.js: '>=1'
       sqlite3: '>=5'
-      typebox: '>=1.0.0'
+      typebox: '>=1.2.0'
       valibot: '>=1.0.0-beta.7'
       zod: ^3.25.0 || ^4.0.0
     peerDependenciesMeta:
       '@aws-sdk/client-rds-data':
         optional: true
       '@cloudflare/workers-types':
+        optional: true
+      '@drizzle-team/minipg':
         optional: true
       '@effect/sql-d1':
         optional: true
@@ -2928,8 +2961,8 @@ packages:
       unstorage:
         optional: true
 
-  hono@4.13.5:
-    resolution: {integrity: sha512-O6+/eCYRkzzzy0rPWwKLiGBR1nFuUPZynnwjxN1MBA62NNqbT0wQEzQyK2gSO5yDIDB336sXQleAhOHrzlYyKw==}
+  hono@4.13.13:
+    resolution: {integrity: sha512-CQ46U0ZkAGmbT/4UxdzzGJpacP2IeKgY4a5/tOI9AABbpOMfK739wfDXmv1usCk+3RkKj1hQy4/fjhiwa2xlrA==}
     engines: {node: '>=16.9.0'}
 
   import-fresh@3.3.1:
@@ -3226,6 +3259,10 @@ packages:
     resolution: {integrity: sha512-XrsrhT5sybtKI6wakr2SPOlGZWWYbUXZ7a0jT8/QOeAPau+1X/bSegNe5YR75oJmEZQbKningirmGOEJCIk61Q==}
     engines: {node: '>=12.20.0'}
 
+  obug@3.0.0:
+    resolution: {integrity: sha512-5vvB5+W7ePv+p3uqxi+RcW1XAzLW0/hxt3/4X4Lc4qHudzOhmBiBwOY6DRob4WnanAEGvNcLjF+KNOufrUoEQw==}
+    engines: {node: '>=12.20.0'}
+
   open@11.0.1:
     resolution: {integrity: sha512-NzwMUB6C1D0+Kd+9iMS/H4k+Ck3cTX6Ckyfr/gAGlmvSE1LUQZnEZvWBi4PYmMwH/S5SMeTXnE+9uAz8uF+pWw==}
     engines: {node: '>=20'}
@@ -3473,6 +3510,10 @@ packages:
     resolution: {integrity: sha512-yau8yJdTt989Mm0Bd/236QnzEiPf2xLLTqUZRUJOo/3CB078LSwzei343DgtJVmfJKJE3TMINY1u42SQsP6mXw==}
     engines: {node: '>=14.0.0'}
 
+  tinyrainbow@3.2.0:
+    resolution: {integrity: sha512-LgO3D9yZJjApUiuUfl9iFAwrtaX4+lok3wJIqttGoKCHlWUqHqbQpnxCf82L8FjgKsh4iGo78hqJwgL8F6To2A==}
+    engines: {node: '>=14.0.0'}
+
   totalist@3.0.1:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
@@ -3610,27 +3651,27 @@ packages:
       '@types/react-dom': ^18.0.0 || ^19.0.0
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
-      vitest: 5.0.3
+      vitest: 5.0.4
     peerDependenciesMeta:
       '@types/react':
         optional: true
       '@types/react-dom':
         optional: true
 
-  vitest@5.0.3:
-    resolution: {integrity: sha512-xMw97S3rjdtj5dkVat7jCsqWBpvchs3RlpQctUqwJD0KkERk40vz2fJ77lDwW/Vzh/pk18eItYAzkodhSes3jQ==}
+  vitest@5.0.4:
+    resolution: {integrity: sha512-z0WxZRV2Sg48wF0FSgMq3TFG8JS38/Qr96vZVZdX6+Em9raQTvnXQvdTFJe2m3rfyJnEHeHQ/snceIdi8D1pVg==}
     engines: {node: ^22.12.0 || ^24.0.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
       '@opentelemetry/api': ^1.9.0
       '@types/node': ^22.0.0 || >=24.0.0
-      '@vitest/browser-playwright': 5.0.3
-      '@vitest/browser-preview': 5.0.3
+      '@vitest/browser-playwright': 5.0.4
+      '@vitest/browser-preview': 5.0.4
       '@vitest/browser-webdriverio': ^5.0.0-beta.5 || >=5.0.0
-      '@vitest/coverage-istanbul': 5.0.3
-      '@vitest/coverage-v8': 5.0.3
-      '@vitest/ui': 5.0.3
+      '@vitest/coverage-istanbul': 5.0.4
+      '@vitest/coverage-v8': 5.0.4
+      '@vitest/ui': 5.0.4
       happy-dom: '*'
       jsdom: '*'
       vite: ^6.4.0 || ^7.0.0 || ^8.0.0
@@ -3695,6 +3736,18 @@ packages:
 
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+  ws@8.22.0:
+    resolution: {integrity: sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -4014,12 +4067,12 @@ snapshots:
       nanostores: 1.5.2
       zod: 4.6.6
 
-  '@better-auth/drizzle-adapter@1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))':
+  '@better-auth/drizzle-adapter@1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))':
     dependencies:
       '@better-auth/core': 1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2)
       '@better-auth/utils': 0.4.2
     optionalDependencies:
-      drizzle-orm: 1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6)
+      drizzle-orm: 1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6)
 
   '@better-auth/kysely-adapter@1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(kysely@0.29.5)':
     dependencies:
@@ -5072,43 +5125,61 @@ snapshots:
       '@rolldown/plugin-babel': 0.2.4(@babel/core@7.29.7(supports-color@10.2.2))(@babel/runtime@7.29.7)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(rolldown@1.1.4)
       babel-plugin-react-compiler: 1.0.0
 
-  '@vitest/browser-playwright@5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.3)':
+  '@vitest/browser-playwright@5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.4)':
     dependencies:
-      '@vitest/browser': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.3)
-      '@vitest/mocker': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      '@vitest/browser': 5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)
+      '@vitest/mocker': 5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
       playwright: 1.64.0
-      tinyrainbow: 3.1.1
-      vitest: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      tinyrainbow: 3.2.0
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
     transitivePeerDependencies:
       - bufferutil
       - msw
       - utf-8-validate
       - vite
 
-  '@vitest/browser-preview@5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.3)':
+  '@vitest/browser-preview@5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)':
     dependencies:
       '@testing-library/dom': 10.4.1
       '@testing-library/user-event': 14.6.7(@testing-library/dom@10.4.1)
-      '@vitest/browser': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.3)
-      vitest: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      '@vitest/browser': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
     transitivePeerDependencies:
       - bufferutil
       - msw
       - utf-8-validate
       - vite
 
-  '@vitest/browser@5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.3)':
+  '@vitest/browser@5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)':
     dependencies:
       '@blazediff/core': 1.10.0
       '@vitest/mocker': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
-      '@vitest/ui': 5.0.3(vitest@5.0.3)
+      '@vitest/ui': 5.0.3(vitest@5.0.4)
       '@vitest/utils': 5.0.3
       magic-string: 1.4.3
       pngjs: 7.0.0
       sirv: 3.0.2
       tinyrainbow: 3.1.1
-      vitest: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
       ws: 8.21.3
+    transitivePeerDependencies:
+      - bufferutil
+      - msw
+      - utf-8-validate
+      - vite
+
+  '@vitest/browser@5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)':
+    dependencies:
+      '@blazediff/core': 1.10.0
+      '@vitest/mocker': 5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      '@vitest/ui': 5.0.4(vitest@5.0.4)
+      '@vitest/utils': 5.0.4
+      magic-string: 1.4.3
+      pngjs: 7.0.0
+      sirv: 3.0.2
+      tinyrainbow: 3.2.0
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      ws: 8.22.0
     transitivePeerDependencies:
       - bufferutil
       - msw
@@ -5124,9 +5195,22 @@ snapshots:
     optionalDependencies:
       vite: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2)'
 
+  '@vitest/mocker@5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))':
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.31
+      '@vitest/spy': 5.0.4
+      estree-walker: 3.0.3
+      magic-string: 1.4.3
+    optionalDependencies:
+      vite: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2)'
+
   '@vitest/pretty-format@5.0.3':
     dependencies:
       tinyrainbow: 3.1.1
+
+  '@vitest/pretty-format@5.0.4':
+    dependencies:
+      tinyrainbow: 3.2.0
 
   '@vitest/snapshot@5.0.3':
     dependencies:
@@ -5137,7 +5221,9 @@ snapshots:
 
   '@vitest/spy@5.0.3': {}
 
-  '@vitest/ui@5.0.3(vitest@5.0.3)':
+  '@vitest/spy@5.0.4': {}
+
+  '@vitest/ui@5.0.3(vitest@5.0.4)':
     dependencies:
       '@vitest/utils': 5.0.3
       fflate: 0.8.3
@@ -5145,13 +5231,29 @@ snapshots:
       pathe: 2.0.3
       sirv: 3.0.2
       tinyrainbow: 3.1.1
-      vitest: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+
+  '@vitest/ui@5.0.4(vitest@5.0.4)':
+    dependencies:
+      '@vitest/utils': 5.0.4
+      fflate: 0.8.3
+      flatted: 3.4.4
+      pathe: 2.0.3
+      sirv: 3.0.2
+      tinyrainbow: 3.2.0
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
 
   '@vitest/utils@5.0.3':
     dependencies:
       '@vitest/pretty-format': 5.0.3
       convert-source-map: 2.0.0
       tinyrainbow: 3.1.1
+
+  '@vitest/utils@5.0.4':
+    dependencies:
+      '@vitest/pretty-format': 5.0.4
+      convert-source-map: 2.0.0
+      tinyrainbow: 3.2.0
 
   '@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2)':
     dependencies:
@@ -5289,7 +5391,7 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  auth@1.7.7(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(chokidar@5.0.0)(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(giget@3.3.0)(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@10.2.2)(vitest@5.0.3):
+  auth@1.7.7(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(chokidar@5.0.0)(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(giget@3.3.0)(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@10.2.2)(vitest@5.0.4):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       '@babel/preset-react': 7.29.7(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -5299,7 +5401,7 @@ snapshots:
       '@better-auth/utils': 0.4.2
       '@clack/prompts': 1.7.0
       '@mrleebo/prisma-ast': 0.16.0
-      better-auth: 1.7.7(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.3)
+      better-auth: 1.7.7(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.4)
       c12: 4.0.0-beta.5(chokidar@5.0.0)(dotenv@17.4.2)(giget@3.3.0)(jiti@2.7.0)
       chalk: 5.6.2
       commander: 15.0.0
@@ -5357,10 +5459,10 @@ snapshots:
 
   baseline-browser-mapping@2.10.41: {}
 
-  better-auth@1.7.7(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.3):
+  better-auth@1.7.7(drizzle-kit@1.0.0-rc.4)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.4):
     dependencies:
       '@better-auth/core': 1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2)
-      '@better-auth/drizzle-adapter': 1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))
+      '@better-auth/drizzle-adapter': 1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6))
       '@better-auth/kysely-adapter': 1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)(kysely@0.29.5)
       '@better-auth/memory-adapter': 1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)
       '@better-auth/mongo-adapter': 1.7.7(@better-auth/core@1.7.7(@better-auth/utils@0.4.2)(@better-fetch/fetch@1.3.2)(better-call@1.4.0(zod@4.6.6))(jose@6.2.10)(kysely@0.29.5)(nanostores@1.5.2))(@better-auth/utils@0.4.2)
@@ -5378,10 +5480,10 @@ snapshots:
       zod: 4.6.6
     optionalDependencies:
       drizzle-kit: 1.0.0-rc.4
-      drizzle-orm: 1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6)
+      drizzle-orm: 1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6)
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
-      vitest: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
     transitivePeerDependencies:
       - '@opentelemetry/api'
 
@@ -5428,7 +5530,7 @@ snapshots:
 
   caniuse-lite@1.0.30001800: {}
 
-  chai@6.2.2: {}
+  chai@6.3.0: {}
 
   chalk@5.6.2: {}
 
@@ -5511,7 +5613,7 @@ snapshots:
       get-tsconfig: 4.14.3
       jiti: 2.7.0
 
-  drizzle-orm@1.0.0-rc.4(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6):
+  drizzle-orm@1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6):
     optionalDependencies:
       '@libsql/client': 0.18.0
       valibot: 1.4.2(typescript@7.0.2)
@@ -5636,11 +5738,11 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  hono-rate-limiter@0.5.4(hono@4.13.5(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)):
+  hono-rate-limiter@0.5.4(hono@4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)):
     dependencies:
-      hono: 4.13.5(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)
+      hono: 4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)
 
-  hono@4.13.5(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822): {}
+  hono@4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822): {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -5871,6 +5973,8 @@ snapshots:
 
   obug@2.2.1: {}
 
+  obug@3.0.0: {}
+
   open@11.0.1:
     dependencies:
       default-browser: 5.5.1
@@ -5880,7 +5984,7 @@ snapshots:
       powershell-utils: 0.2.0
       wsl-utils: 1.0.0
 
-  oxfmt@0.72.0(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)):
+  oxfmt@0.72.0(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)):
     dependencies:
       tinypool: 2.2.0
     optionalDependencies:
@@ -5903,7 +6007,7 @@ snapshots:
       '@oxfmt/binding-win32-arm64-msvc': 0.72.0
       '@oxfmt/binding-win32-ia32-msvc': 0.72.0
       '@oxfmt/binding-win32-x64-msvc': 0.72.0
-      vite-plus: 1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)
+      vite-plus: 1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)
 
   oxlint-tsgolint@7.0.2003:
     optionalDependencies:
@@ -5914,7 +6018,7 @@ snapshots:
       '@oxlint-tsgolint/win32-arm64': 7.0.2003
       '@oxlint-tsgolint/win32-x64': 7.0.2003
 
-  oxlint@1.87.0(oxlint-tsgolint@7.0.2003)(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)):
+  oxlint@1.87.0(oxlint-tsgolint@7.0.2003)(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)):
     optionalDependencies:
       '@oxlint/binding-android-arm-eabi': 1.87.0
       '@oxlint/binding-android-arm64': 1.87.0
@@ -5936,7 +6040,7 @@ snapshots:
       '@oxlint/binding-win32-ia32-msvc': 1.87.0
       '@oxlint/binding-win32-x64-msvc': 1.87.0
       oxlint-tsgolint: 7.0.2003
-      vite-plus: 1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)
+      vite-plus: 1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2)
 
   p-map@7.0.6: {}
 
@@ -6146,6 +6250,8 @@ snapshots:
 
   tinyrainbow@3.1.1: {}
 
+  tinyrainbow@3.2.0: {}
+
   totalist@3.0.1: {}
 
   tslib@2.8.1: {}
@@ -6242,24 +6348,24 @@ snapshots:
       uuid: 14.0.2
       vite: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2)'
 
-  vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2):
+  vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2):
     dependencies:
       '@oxc-project/types': 0.153.0
       '@oxlint/plugins': 1.79.0
-      '@vitest/browser': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.3)
-      '@vitest/browser-preview': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.3)
+      '@vitest/browser': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)
+      '@vitest/browser-preview': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)
       '@vitest/mocker': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
       '@vitest/pretty-format': 5.0.3
       '@vitest/snapshot': 5.0.3
       '@vitest/spy': 5.0.3
       '@vitest/utils': 5.0.3
-      oxfmt: 0.72.0(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2))
-      oxlint: 1.87.0(oxlint-tsgolint@7.0.2003)(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/ui@5.0.3)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2))
+      oxfmt: 0.72.0(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2))
+      oxlint: 1.87.0(oxlint-tsgolint@7.0.2003)(vite-plus@1.1.0(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/ui@5.0.4)(esbuild@0.28.2)(jiti@2.7.0)(playwright@1.64.0)(tsx@4.23.0)(typescript@7.0.2))
       oxlint-tsgolint: 7.0.2003
       vite: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2)'
-      vitest: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
     optionalDependencies:
-      '@vitest/browser-playwright': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.3)
+      '@vitest/browser-playwright': 5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.4)
       '@voidzero-dev/vite-plus-darwin-arm64': 1.1.0
       '@voidzero-dev/vite-plus-darwin-x64': 1.1.0
       '@voidzero-dev/vite-plus-linux-arm64-gnu': 1.1.0
@@ -6303,24 +6409,24 @@ snapshots:
       - vue-tsc
       - yaml
 
-  vitest-browser-react@2.3.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.3):
+  vitest-browser-react@2.3.0(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(vitest@5.0.4):
     dependencies:
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
-      vitest: 5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      vitest: 5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
     optionalDependencies:
       '@types/react': 19.3.0
       '@types/react-dom': 19.3.0(@types/react@19.3.0)
 
-  vitest@5.0.3(@types/node@26.6.5)(@vitest/browser-playwright@5.0.3)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.3)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2)):
+  vitest@5.0.4(@types/node@26.6.5)(@vitest/browser-playwright@5.0.4)(@vitest/browser-preview@5.0.3)(@vitest/ui@5.0.4)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
-      chai: 6.2.2
+      '@vitest/mocker': 5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))
+      chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
       magic-string: 1.4.3
-      obug: 2.2.1
+      obug: 3.0.0
       picomatch: 4.0.7
       std-env: 4.3.0
       tinybench: 6.2.2
@@ -6330,9 +6436,9 @@ snapshots:
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 26.6.5
-      '@vitest/browser-playwright': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.3)
-      '@vitest/browser-preview': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.3)
-      '@vitest/ui': 5.0.3(vitest@5.0.3)
+      '@vitest/browser-playwright': 5.0.4(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(playwright@1.64.0)(vitest@5.0.4)
+      '@vitest/browser-preview': 5.0.3(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(vitest@5.0.4)
+      '@vitest/ui': 5.0.4(vitest@5.0.4)
     transitivePeerDependencies:
       - msw
 
@@ -6368,6 +6474,8 @@ snapshots:
   ws@8.21.0: {}
 
   ws@8.21.3: {}
+
+  ws@8.22.0: {}
 
   wsl-utils@1.0.0:
     dependencies:
