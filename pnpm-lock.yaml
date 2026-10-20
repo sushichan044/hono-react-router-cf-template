@@ -199,7 +199,7 @@ overrides:
   vitest@*: 5.0.4
 
 patchedDependencies:
-  hono@4: 24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822
+  hono@4: 4b108736b52521a84e82a78d67c4e307a3c47a674466de26b549806774f2b983
 
 importers:
 
@@ -222,10 +222,10 @@ importers:
         version: 1.0.0-rc.5-5935859(@libsql/client@0.18.0)(valibot@1.4.2(typescript@7.0.2))(zod@4.6.6)
       hono:
         specifier: 4.13.13
-        version: 4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)
+        version: 4.13.13(patch_hash=4b108736b52521a84e82a78d67c4e307a3c47a674466de26b549806774f2b983)
       hono-rate-limiter:
         specifier: 0.5.4
-        version: 0.5.4(hono@4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822))
+        version: 0.5.4(hono@4.13.13(patch_hash=4b108736b52521a84e82a78d67c4e307a3c47a674466de26b549806774f2b983))
       isbot:
         specifier: 5.2.2
         version: 5.2.2
@@ -6228,11 +6228,11 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  hono-rate-limiter@0.5.4(hono@4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)):
+  hono-rate-limiter@0.5.4(hono@4.13.13(patch_hash=4b108736b52521a84e82a78d67c4e307a3c47a674466de26b549806774f2b983)):
     dependencies:
-      hono: 4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822)
+      hono: 4.13.13(patch_hash=4b108736b52521a84e82a78d67c4e307a3c47a674466de26b549806774f2b983)
 
-  hono@4.13.13(patch_hash=24987c4a32e48bd62db43b978e69e5dd7d71794faeea1a4f090acf2277b26822): {}
+  hono@4.13.13(patch_hash=4b108736b52521a84e82a78d67c4e307a3c47a674466de26b549806774f2b983): {}
 
   import-fresh@3.3.1:
     dependencies:
