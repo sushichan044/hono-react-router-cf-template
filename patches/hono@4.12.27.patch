@@ -11,25 +11,17 @@ index 95206a4e50afdaf3adcc506623f3cc587399f2fa..3782d4c68a0baf2d8be896c71efc228e
  /**
   * Interface representing a function that responds with HTML content.
   *
-@@ -189,7 +189,7 @@ interface ResponseInit<T extends StatusCode = StatusCode> {
- type ResponseOrInit<T extends StatusCode = StatusCode> = ResponseInit<T> | Response;
- export declare const TEXT_PLAIN = "text/plain; charset=UTF-8";
- export declare class Context<E extends Env = any, P extends string = any, I extends Input = {}> {
--             
-+
-     /**
-      * `.env` can get bindings (environment variables, secrets, KV namespaces, D1 database, R2 bucket etc.) in Cloudflare Workers.
-      *
 diff --git a/dist/types/index.d.ts b/dist/types/index.d.ts
-index 6e7b982fd1f66aa57e749859a220d293984f37c9..2d5dd3c1c40ffd9e42c675c023e0c2eb7e967a68 100644
 --- a/dist/types/index.d.ts
 +++ b/dist/types/index.d.ts
-@@ -22,7 +22,7 @@ export type { Env, ErrorHandler, Handler, MiddlewareHandler, Next, NotFoundRespo
-  * Types for context, context variable map, context renderer, and execution context.
-  */
- export { Context } from './context';
--export type { ContextVariableMap, ContextRenderer, ExecutionContext } from './context';
-+export type { ContextVariableMap, ContextRenderer, ExecutionContext, JSONRespondReturn } from './context';
- /**
-  * Type for HonoRequest.
-  */
+@@ -1,6 +1,6 @@
+ import { Env, ErrorHandler, Handler, Input, MiddlewareHandler, Next, NotFoundHandler, NotFoundResponse, Schema, ToSchema, TypedResponse, ValidationTargets } from "./types.js";
+ import { HonoRequest } from "./request.js";
+-import { Context, ContextRenderer, ContextVariableMap, ExecutionContext } from "./context.js";
++import { Context, ContextRenderer, ContextVariableMap, ExecutionContext, JSONRespondReturn } from "./context.js";
+ import { Hono } from "./hono.js";
+ import { ClientRequestOptions, InferRequestType, InferResponseType } from "./client/types.js";
+-export { type ClientRequestOptions, Context, type ContextRenderer, type ContextVariableMap, type Env, type ErrorHandler, type ExecutionContext, type Handler, Hono, type HonoRequest, type InferRequestType, type InferResponseType, type Input, type MiddlewareHandler, type Next, type NotFoundHandler, type NotFoundResponse, type Schema, type ToSchema, type TypedResponse, type ValidationTargets };
+\ No newline at end of file
++export { type ClientRequestOptions, Context, type ContextRenderer, type ContextVariableMap, type Env, type ErrorHandler, type ExecutionContext, type Handler, Hono, type HonoRequest, type InferRequestType, type InferResponseType, type Input, type JSONRespondReturn, type MiddlewareHandler, type Next, type NotFoundHandler, type NotFoundResponse, type Schema, type ToSchema, type TypedResponse, type ValidationTargets };
+\ No newline at end of file
