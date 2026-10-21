@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@base-ui/react": "1.9.0",
-    "@better-auth/drizzle-adapter": "1.7.8",
+    "@better-auth/drizzle-adapter": "1.7.10",
     "@libsql/client": "0.18.0",
-    "better-auth": "1.7.8",
+    "better-auth": "1.7.10",
     "drizzle-orm": "1.0.0-rc.5-5935859",
     "hono": "4.13.13",
     "hono-rate-limiter": "0.5.4",
