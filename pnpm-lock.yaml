@@ -243,8 +243,8 @@ importers:
         specifier: 1.64.0
         version: 1.64.0(@types/node@26.6.5)(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(wrangler@4.151.1(@types/node@26.6.5))
       '@iconify/json':
-        specifier: 2.2.544
-        version: 2.2.544
+        specifier: 2.2.545
+        version: 2.2.545
       '@react-router/dev':
         specifier: 8.4.0
         version: 8.4.0(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.0)(typescript@7.0.2))(react-router@8.4.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(supports-color@10.2.2)(typescript@7.0.2)(wrangler@4.151.1(@types/node@26.6.5))
@@ -1014,8 +1014,8 @@ packages:
   '@floating-ui/utils@0.2.12':
     resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
 
-  '@iconify/json@2.2.544':
-    resolution: {integrity: sha512-xsG0R+cohL1LagZc7Fr2zWMLRDDGb7tbQJ2ZhM8iL4itCvA6HhKx7UjuCjz6KnuBcQr1jkIiI3vXd7uZpd+yfQ==}
+  '@iconify/json@2.2.545':
+    resolution: {integrity: sha512-Ucao184M47kRtBqmd47a5TWcrFC9zdGLACcpJonLwnCdj5aeiKAxsj0i75hpZffWDqi4sUXJwpIKCJSBdRHXXw==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -4553,7 +4553,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.12': {}
 
-  '@iconify/json@2.2.544':
+  '@iconify/json@2.2.545':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3

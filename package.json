@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.64.0",
-    "@iconify/json": "2.2.544",
+    "@iconify/json": "2.2.545",
     "@react-router/dev": "8.4.0",
     "@rolldown/plugin-babel": "^0.2.4",
     "@svgr/core": "8.1.0",
